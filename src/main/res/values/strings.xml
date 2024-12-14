@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UriAppSample</string>
+    <string name="intent_scheme">uriappsample</string>
+    <string name="intent_host">response</string>
+    <string name="intent_get_orders_response">getorders_response</string>
+    <string name="intent_products_response">products_response</string>
+</resources>

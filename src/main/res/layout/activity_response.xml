@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cielo.uriapp.cielo.ads.uriapp.ResponseActivity">
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:text="Cancelar Ordem" />
+
+    <Button
+        android:id="@+id/cancel_failure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="100px"
+        android:layout_below="@+id/cancel_button"
+        android:gravity="top|center"
+        android:text="Falhar Cancelar" />
+
+    <ScrollView
+        android:id="@+id/logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cancel_failure_btn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/logCancelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/json_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

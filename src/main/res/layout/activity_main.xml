@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/checkout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHECKOUT" />
+
+            <Button
+                android:id="@+id/checkout_button_with_sub_acquirer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHECKOUT SUBACQUIRER" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/print_errorbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRINT ERROR" />
+
+            <Button
+                android:id="@+id/print_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRINT IMAGE" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/print_multiple_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRINT MULTIPLE" />
+
+            <Button
+                android:id="@+id/print_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRINT" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/checkout_failure_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHECKOUT AUTH FAIL" />
+
+            <Button
+                android:id="@+id/btn_list_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIST PRODUCTS" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_list_orders_failure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIST ORDERS FAILURE" />
+
+            <Button
+                android:id="@+id/btn_terminal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GET TERMINAL INFO" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_list_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIST ORDERS" />
+
+            <Button
+                android:id="@+id/btn_get_order_by_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER BY ORDERID" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_get_order_by_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER BY VALUE" />
+
+            <Button
+                android:id="@+id/checkout_debit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHECKOUT DEBIT" />
+
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/table"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/logLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
